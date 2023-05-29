@@ -1,0 +1,15 @@
+Instance ID
+i-02215411666a8d4ca (EC2-for-RDS-Connect)
+Open an SSH client.
+
+Locate your private key file. The key used to launch this instance is EC2-RDS.pem
+
+Run this command, if necessary, to ensure your key is not publicly viewable.
+ chmod 400 EC2-RDS.pem
+
+Connect to your instance using its Public DNS:
+ ec2-13-233-105-71.ap-south-1.compute.amazonaws.com
+
+Example:
+
+ ssh -i "EC2-RDS.pem" ec2-user@ec2-13-233-105-71.ap-south-1.compute.amazonaws.com
