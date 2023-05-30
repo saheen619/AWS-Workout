@@ -1,1 +1,3 @@
+https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_GettingStarted.CreatingConnecting.MySQL.html#CHAP_GettingStarted.Connecting.MySQL
+
 https://repost.aws/knowledge-center/rds-connect-ec2-bastion-host
