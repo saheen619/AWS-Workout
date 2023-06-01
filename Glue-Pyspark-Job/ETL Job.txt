@@ -1,0 +1,30 @@
+               
+               
+                S3 Bucket (DATA in .csv) 
+                       
+                        |
+                        |
+                        |
+                       \ /
+
+                  GLUE CRAWLER
+    (Crawls to get the metadata from the s3 data)
+                       
+                        |
+                        |
+                        |
+                       \ /
+                  
+                  DATA CATALOG
+(The crawled metadata are stored in tables in the created database)
+                  
+                        |
+                        |
+                        |  (GLUE PYSPARK ETL JOB)
+                        |
+                        |
+                       \ /
+        
+        GLUE STUDIO - SPARK SCRIPT EDITOR
+(Uses a Glue Pyspark Job and the metadata from the database to 
+create a spark DataFrmae, where you can run queries over it.)

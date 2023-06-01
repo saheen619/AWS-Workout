@@ -18,13 +18,13 @@ job.init(args['JOB_NAME'], args)
 empDf = glueContext.create_dynamic_frame.from_catalog(
         database="b1-glue-catalog-db",
         table_name="s3new_b1_athena_input_data",
-        transformation_ctx = "s3_input_new"
+        transformation_ctx = "s3_job_bookmark_01"
         )
 
 empDf2 = glueContext.create_dynamic_frame.from_catalog(
          database="b1-glue-catalog-db",
          table_name="s3new_b1_athena_input_data_2",
-         transformation_ctx = "s3_input_new_02"                 
+         transformation_ctx = "s3_job_bookmark_02"                 
          )
 
 # transformation_ctx, is the variable for Job Bookmark, Where Job Bookmarking logs are written as Transormation file        
